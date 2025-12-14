@@ -44,6 +44,52 @@
         height: 100vh;
       }
     </style>
+    <script>
+    function Show(Div, activel) {
+        var myDiv = document.getElementById(Div);
+        var myDiv1 = document.getElementById('tab-1');
+        var myDiv2 = document.getElementById('tab-2');
+        var myDiv3 = document.getElementById('tab-3');
+        var myDiv4 = document.getElementById('tab-4');
+        var myDiv5 = document.getElementById('tab-5');
+        myDiv1.style.display = 'none';
+        myDiv2.style.display = 'none';
+        myDiv3.style.display = 'none';
+        myDiv4.style.display = 'none';
+        myDiv5.style.display = 'none';
+
+        var Exp = document.getElementById('Exp');
+        var Risk = document.getElementById('Risk');
+        var Cyber = document.getElementById('Cyber');
+        var Any = document.getElementById('Any');
+        var Ml = document.getElementById('Ml');
+        Exp.classList.remove('resp-tab-item', 'hor_1', 'resp-tab-active');
+        Risk.classList.remove('resp-tab-item', 'hor_1', 'resp-tab-active');
+        Cyber.classList.remove('resp-tab-item', 'hor_1', 'resp-tab-active');
+        Any.classList.remove('resp-tab-item', 'hor_1', 'resp-tab-active');
+        Ml.classList.remove('resp-tab-item', 'hor_1', 'resp-tab-active');
+
+        if (myDiv) {
+            myDiv.style.display = 'block';
+            var element = document.getElementById(activel);
+            if (element) {
+                element.classList.add('resp-tab-item', 'hor_1', 'resp-tab-active');
+            }
+        }
+    }
+
+    window.addEventListener('load', function () {
+        var myDiv2 = document.getElementById('tab-2');
+        var myDiv3 = document.getElementById('tab-3');
+        var myDiv4 = document.getElementById('tab-4');
+        var myDiv5 = document.getElementById('tab-5');
+        myDiv2.style.display = 'none';
+        myDiv3.style.display = 'none';
+        myDiv4.style.display = 'none';
+        myDiv5.style.display = 'none';
+        Show('tab-1', 'Exp');
+    });
+</script>
   </head>
   <body>
      <div class="cursor-outer">
@@ -74,7 +120,7 @@
             >
               <a
                 class="navbar-brand logo text-black p-1 px-4 h-100"
-                href="Index.html"
+                href="index.html"
                 ><span class="text-theme"> <img src="Imgs/Logo1.jpeg" /></span
               ></a>
               <!-- Navbar -->
@@ -116,7 +162,7 @@
                 <nav class="navbar navbar-expand-lg">
                   <a
                     class="navbar-brand logo text-black white-bg px-4 h-100 logo-sticky"
-                    href="Index.html"
+                    href="index.html"
                   >
                     <span class="text-theme">
                       <img src="Imgs/Logo1.jpeg" /></span
@@ -139,7 +185,7 @@
                       style="margin-right: 100px !important; padding-top: 10px"
                     >
                       <li class="nav-item">
-                        <a class="nav-link" href="Index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a
@@ -203,341 +249,257 @@
           </div>
         </div>
       </header>
-    <section
-      class="page-title parallaxie"
-      data-bg-img="images/bg/OverHeader.jpg"
-      data-overlay="6"
-    >
+      <section class="page-title parallaxie" data-bg-img="images/bg/08.jpg" data-overlay="6">
       <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col">
-            <h1>Overview</h1>
-            <nav aria-label="breadcrumb" class="page-breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="Index.html"><i class="las la-home me-1"></i>Home</a>
-                </li>
-                <li class="breadcrumb-item"><a href="#">About Us</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Overview
-                </li>
-              </ol>
-            </nav>
+          <div class="row justify-content-center text-center">
+              <div class="col">
+                  <h1>Mission and Values</h1>
+                  <nav aria-label="breadcrumb" class="page-breadcrumb">
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="las la-home me-1"></i>Home</a>
+                          </li>
+                          <li class="breadcrumb-item"><a href="#">About Us</a>
+                          </li>
+                          <li class="breadcrumb-item active" aria-current="page">Mission and Values</li>
+                      </ol>
+                  </nav>
+              </div>
           </div>
-        </div>
       </div>
       <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
       </div>
-    </section>
+  </section>
 
-    <div class="page-content">
+  <div class="page-content">
+      <!-- ABOUT US
+      ================================================== -->
+      <section class="about-style-04 pt-8">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-6 mb-2-2 mb-sm-2-5 mb-lg-0">
+                      <div class="about-img-box position-relative text-center text-lg-start">
+                          <div class="about-img-left">
+                              <img src="images/content/about-12.jpg" alt="..." class="about-img-1">
+                          </div>
+                          <div class="about-img-right">
+                              <img src="images/content/about-13.jpg" alt="..." class="about-img-2">
+                          </div>
+                          <div class="about-img-bottom">
+                              <img src="images/content/about-14.jpg" alt="..." class="about-img-3">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="ps-lg-2-9">
+                          <h2 class="mb-4 text-capitalize">Empowering Innovation, <span class="text-secondary">Shaping the Future</span></h2>
+                          <p class="mb-2-5">At Sidraforce IT, our mission is to empower businesses through innovative technology solutions. We strive to provide cutting-edge IT services that enhance productivity, streamline operations, and drive growth for our clients. </p>
+                          <div class="steps-item-wrap">
+                              <div class="steps-wrap">
+                                  <div class="steps-number"><span class="text-white">01</span></div>
+                                  <div class="steps-line-wrap">
+                                      <div class="steps-line"></div>
+                                  </div>
+                              </div>
+                              <div class="steps-content">
+                                  <h4>Our Mission</h4>
+                                  <p class="mb-0 w-lg-95">Empowering businesses with innovative tech solutions, driving growth through excellence and collaboration.</p>
+                              </div>
+                          </div>
+                          <div class="steps-item-wrap">
+                              <div class="steps-wrap">
+                                  <div class="steps-number"><span class="text-white">02</span></div>
+                                  <div class="steps-line-wrap">
+                                      <div class="steps-line"></div>
+                                  </div>
+                              </div>
+                              <div class="steps-content">
+                                  <h4>Our Vision</h4>
+                                  <p class="mb-0 w-lg-95">Shaping a future where businesses thrive in a digital ecosystem guided by customer-centricity and sustainability.</p>
+                              </div>
+                          </div>
+                          <div class="steps-item-wrap">
+                              <div class="steps-wrap">
+                                  <div class="steps-number"><span class="text-white">03</span></div>
+                                  <div class="steps-line-wrap">
+                                      <div class="steps-line last"></div>
+                                  </div>
+                              </div>
+                              <div class="steps-content mb-0">
+                                  <h4>Our Approach</h4>
+                                  <p class="mb-0 w-lg-95">Tailoring solutions through collaboration, innovation, and ethical practices, we ensure lasting success.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- SERVICE 
+      ================================================== -->
       <section>
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12 col-12 mb-0">
-              <div class="section-title" style="margin-bottom: 0px !important">
-                <h6>About Us</h6>
-                <h4 class="title">
-                  Get to Know Us a Bit More and Discover Our Passion for
-                  Innovation your business digitally.
-                </h4>
+          <div class="container">
+              <div class="section-heading5">
+                  <span class="sub-title mb-3">Why work with us</span>
+                  <h5 style="width: 100%">Unified Strength: The Individuality Within <span class="text-secondary">Our Team </span></h5>
+                  <div class="divider"></div>
               </div>
-            </div>
-            <div class="col-lg-6 col-12 order-lg-1">
-              <div class="position-relative">
-                <div class="pb-sm-8 pe-sm-8">
-                  <img class="img-fluid" src="Imgs/Whoweare.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-12">
-              <p class="mb-0 lead">
-                Welcome to SiDRAFORCE, your partner in navigating the digital
-                landscape. Established in 2024, we have quickly emerged as a
-                leader in digital transformation, digital marketing, and digital
-                innovation services. Our rapid growth is a testament to our
-                commitment to excellence, innovation, and our client's success.
-                We specialize in leveraging cutting-edge technologies and
-                creative strategies to help businesses adapt, grow, and thrive
-                in today's fast-paced digital world
-              </p>
-              <p class="mb-0 lead">
-                At our company, we understand that every business is unique, and
-                so are its challenges and opportunities. Our team of experts
-                collaborates closely with each client to deliver customized
-                solutions that drive real results.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="theme-bg-2">
-        <div class="container">
-          <div class="col">
-            <h5 class="text-white">
-              Join us on this exciting journey and discover how
-              <b>SiDRAFORCE</b> can empower your business to reach new heights
-            </h5>
-          </div>
-        </div>
-      </section>
-      <section class="pt-0 service-sec pb-2 p-1">
-        <div class="container-fluid p-md-0">
-          <div class="section-title mt-3 justify-content-center text-center">
-            <h6>Why Work With Us?</h6>
-            <h2 class="title mb-0">Our Core Competencies</h2>
-          </div>
-        </div>
-        <div class="container">
-          <p>
-            Whether it's transforming your business processes, enhancing your
-            online presence, or pioneering new digital initiatives, we're here
-            to support you every step of the way.
-          </p>
-
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-solution"></i>
-                </div>
-                <div class="featured-title">
-                  <h5 style="white-space: nowrap">Digital Transformation</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    We revolutionize businesses by integrating advanced
-                    technologies to streamline processes.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mt-5 mt-sm-0">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-secure"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Digital Marketing</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    Our prowess in SEO, social media, content marketing, and
-                    skyrockets brand visibility.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mt-5 mt-lg-0">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-consultant"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Digital Innovation</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    We pioneer groundbreaking digital solutions and cutting-edge
-                    technologies to keep our clients ahead of the curve
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mt-5 mt-lg-0">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-user-interface"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Custom Solutions</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    We tailor our services to fit each client's unique needs,
-                    ensuring optimal outcomes and ultimate satisfaction.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-password"></i>
-                </div>
-                <div class="featured-title">
-                  <h5 style="white-space: nowrap">Data-Driven Strategies</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    Our decisions are powered by comprehensive data analysis,
-                    enabling us to deliver precise and impactful results.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-solution"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Quality Assurance</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    We uphold rigorous standards of excellence in all our
-                    services to consistently deliver top-tier quality.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 mt-5 mt-lg-0">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-user-interface"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Agile Methodology</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    Our agile practices ensure flexibility, rapid delivery, and
-                    continuous improvement in every project.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mt-5 mt-lg-0">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-consultant"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Expert Team</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    Our squad of creative professionals brings diverse skills
-                    and fresh insights to every endeavor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mt-5 mt-lg-0">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-file"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Customer-Centric Approach</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    We prioritize our clients' goals and collaborate closely to
-                    achieve their business aspirations.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mt-5 mt-sm-0">
-              <div class="featured-item style-1 active">
-                <div class="featured-icon">
-                  <i class="flaticon-secure"></i>
-                </div>
-                <div class="featured-title">
-                  <h5>Innovation Culture</h5>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    We cultivate a culture of innovation that sparks creativity,
-                    experimentation, and staying ahead of industry trends
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="p-0" style="display: none">
-        <div class="container-fluid p-0">
-          <div class="row">
-            <div class="col-10 ms-auto">
-              <div class="light-bg p-5">
-                <div
-                  class="owl-carousel no-pb"
-                  data-dots="false"
-                  data-items="6"
-                  data-md-items="4"
-                  data-sm-items="3"
-                  data-xs-items="2"
-                  data-margin="20"
-                  data-autoplay="true"
-                >
-                  <div class="item">
-                    <div class="client-logo">
-                      <img
-                        class="img-fluid"
-                        src="images/client/vbicon.png"
-                        alt=""
-                        style="height: 80px !important"
-                      />
-                    </div>
+              <div class="horizontaltab tab-style1">
+                  <ul class="resp-tabs-list hor_1">
+                      <li id="Exp" class="tab1" onclick="Show('tab-1', 'Exp');">
+                          <img src="Imgs/icons/icon-47.png" alt="..." class="d-none d-lg-block mx-auto mb-1">Expert & Professional</li>
+                      <li class="tab2" id="Risk" onclick="Show('tab-2', 'Risk');">
+                          <img src="Imgs/icons/icon-48.png" alt="..." class="d-none d-lg-block mx-auto mb-1">Risk Management</li>
+                      <li class="tab3" id="Cyber" onclick="Show('tab-3', 'Cyber');">
+                          <img src="Imgs/icons/icon-49.png" alt="..." class="d-none d-lg-block mx-auto mb-1">Cyber Security</li>
+                      <li class="tab4" id="Any" onclick="Show('tab-4', 'Any');">
+                          <img src="Imgs/icons/icon-50.png" alt="..." class="d-none d-lg-block mx-auto mb-1">Analytic Solutions</li>
+                      <li class="tab5" id="Ml" onclick="Show('tab-5', 'Ml');">
+                          <img src="Imgs/icons/icon-51.png" alt="..." class="d-none d-lg-block mx-auto mb-1">Machine Learning</li>
+                  </ul>
+                  <div class="resp-tabs-container hor_1">
+                      <div class="first" id="tab-1">
+                          <div class="row align-items-xl-center">
+                              <div class="col-lg-5 mb-1-6 mb-md-1-9 mb-lg-0">
+                                  <img src="Imgs/service/service-16.jpg" class="border border-color-extra-light-gray border-width-8 d-block mx-auto" alt="...">
+                              </div>
+                              <div class="col-lg-7">
+                                  <div class="ps-lg-3">
+                                      <h4 class="mb-3 text-capitalize">Expert & Professional</h4>
+                                      <p class="mb-1-6 w-lg-95">IT professionals work to create the laptop, network, and conversation structures that an corporation needs, after which paintings to make certain that those structures are operating efficiently and efficiently. However, there are many different types of IT specialists, a number of which we explore in below.</p>
+                                      <ul class="list-style3">
+                                          <li>Information safety analyst</li>
+                                          <li>Computer and statistics structures manager</li>
+                                          <li>Network and laptop structures administrator</li>
+                                          <li>Computer help specialist</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="second" id="tab-2">
+                          <div class="row align-items-xl-center">
+                              <div class="col-lg-7 order-2 order-lg-1">
+                                  <div class="pe-lg-3">
+                                      <h4 class="mb-3 text-capitalize">Risk Management</h4>
+                                      <p class="mb-1-6 w-lg-95">In project management, risk management is the exercise of identifying, evaluating, and stopping or mitigating risks to a project which have the ability to effect the favored outcomes. Here are a few recommendations for reduce risk.</p>
+                                      <ul class="list-style3">
+                                          <li>Create a risk management plan</li>
+                                          <li>Keep your risk register up to date</li>
+                                          <li>Be proactive rather than reactive</li>
+                                          <li>Develop your project management skills</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-lg-5 order-1 order-lg-2 mb-1-6 mb-md-1-9 mb-lg-0">
+                                  <div class="text-center text-lg-end">
+                                      <img src="Imgs/service/RMP.png" class="border border-color-extra-light-gray border-width-8 d-block mx-auto" alt="...">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="third" id="tab-3">
+                          <div class="row align-items-xl-center">
+                              <div class="col-lg-5 mb-1-6 mb-md-1-9 mb-lg-0">
+                                  <img src="Imgs/service/CyberSec.png" class="border border-color-extra-light-gray border-width-8 d-block mx-auto" alt="...">
+                              </div>
+                              <div class="col-lg-7">
+                                  <div class="ps-lg-3">
+                                      <h4 class="mb-3 text-capitalize">Cyber Security</h4>
+                                      <p class="mb-1-6 w-lg-95">Cybersecurity is the nation or technique of protective and improving laptop systems, networks, devices, and applications from any kind of cyber attack. Here are some simple policies you can put in place to reduce your exposure to cyber attacks:</p>
+                                      <ul class="list-style3">
+                                          <li>Implement a company-huge cybersecurity policy</li>
+                                          <li>Train your personnel to identify threats</li>
+                                          <li>Have a recovery plan ready</li>
+                                          <li>Keep your infrastructure up to date</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="four" id="tab-4">
+                          <div class="row align-items-xl-center">
+                              <div class="col-lg-7 order-2 order-lg-1">
+                                  <div class="pe-lg-3">
+                                      <h4 class="mb-3 text-capitalize">Analytic Solutions</h4>
+                                      <p class="mb-1-6 w-lg-95">Business analytics is all approximately locating methods to enhance a commercial enterprise. Through using statistics and statistics, a commercial enterprise analyst will clear up the troubles a commercial enterprise faces in a logical and analytical way. Here are essential motives for the usage of Business evaluation methods:</p>
+                                      <ul class="list-style3">
+                                          <li>It helps you to understand the dynamics of the company</li>
+                                          <li>It helps you to understand troubles withinside the goal business enterprise</li>
+                                          <li>It helps you perceive and articulate the want for change</li>
+                                          <li>To maximize the value delivered by an organization to its stakeholders</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-lg-5 order-1 order-lg-2 mb-1-6 mb-md-1-9 mb-lg-0">
+                                  <div class="text-center text-lg-end">
+                                      <img src="Imgs/service/Dataankytcs.png" class="border border-color-extra-light-gray border-width-8 d-block mx-auto" alt="...">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fifth" id="tab-5">
+                          <div class="row align-items-xl-center">
+                              <div class="col-lg-5 mb-1-6 mb-md-1-9 mb-lg-0">
+                                  <img src="Imgs/service/ML.png" class="border border-color-extra-light-gray border-width-8 d-block mx-auto" alt="...">
+                              </div>
+                              <div class="col-lg-7">
+                                  <div class="ps-lg-3">
+                                      <h4 class="mb-3 text-capitalize">Machine Learning</h4>
+                                      <p class="mb-1-6 w-lg-95">Machine mastering in enterprise allows in improving enterprise scalability and enhancing enterprise operations for agencies throughout the globe. What's required to create right system mastering systems, that are as under.</p>
+                                      <ul class="list-style3">
+                                          <li>Data preparation capabilities</li>
+                                          <li>Algorithms – fundamental and advanced</li>
+                                          <li>Automation and iterative processes.</li>
+                                          <li>Ensemble modeling.</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
           </div>
-        </div>
       </section>
-
       <section class="py-0 p-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-11">
-              <div
-                class="dark-bg p-4"
-                style="
-                  background-color: #736f8e2b !important;
-                  border-top-right-radius: 50px;
-                  border-bottom-right-radius: 50px;
-                "
-              >
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-lg-1 col-12 order-lg-1"></div>
-                    <div class="col-lg-5 col-12 order-lg-1">
-                      <p style="margin-bottom: 0px !important">Got an Idea?</p>
-                      <h5>Let's connect the dots together</h5>
-                    </div>
-                    <div class="col-lg-1 col-12 order-lg-1"></div>
-                    <div class="col-lg-5 col-12 order-lg-1">
-                      <a
-                        href="Contact.html"
-                        class="butn white me-4 mt-1-9 d-none d-sm-inline-block"
-                        style="border-radius: 50px"
-                        ><i
-                          class="fa fa-arrow-right icon-arrow before white"
-                        ></i
-                        ><span class="label mt-1">Contatct Us</span
-                        ><i class="fa fa-arrow-right icon-arrow after"></i
-                      ></a>
-                    </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-11">
+                      <div class="dark-bg p-4" style="background-color: #736f8e2b !important; border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                          <div class="container">
+                              <div class="row align-items-center">
+                                  <div class="col-lg-1 col-12 order-lg-1">
+                                  </div>
+                                  <div class="col-lg-5 col-12 order-lg-1">
+                                      <p style="margin-bottom: 0px !important;">Got an Idea?</p>
+                                      <h5>Let's connect the dots together</h5>
+                                  </div>
+                                  <div class="col-lg-1 col-12 order-lg-1">
+                                  </div>
+                                  <div class="col-lg-5 col-12 order-lg-1">
+                                      <a href="Contact.html" class="butn white me-4 mt-1-9 d-none d-sm-inline-block" style="border-radius: 50px"><i class="fa fa-arrow-right icon-arrow before white"></i><span class="label mt-1">Contatct Us</span><i class="fa fa-arrow-right icon-arrow after"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
           </div>
-        </div>
       </section>
-      <footer class="footer">
+   
+  <section class="theme-bg-2">
+      <div class="container">
+          <div class="col">
+              <h5 class="text-white">Join us on this exciting journey and discover how <b>SiDRAFORCE</b> can empower 
+                              your business to reach new heights
+                  </h5>
+          </div>
+      </div>
+  </section>
+   <footer class="footer">
         <div class="blink-img">
           <img class="img-fluid" src="images/pattern/01.png" alt="" />
         </div>
@@ -546,7 +508,7 @@
             <div class="row">
               <div class="col-lg-4 col-12">
                 <div class="box-shadow py-3 px-3">
-                  <a class="footer-logo" href="Index.html">
+                  <a class="footer-logo" href="index.html">
                     <h3 class="text-theme" style="font-weight: bold">
                       SiDRAFORCE
                     </h3>
@@ -718,7 +680,7 @@
                     document.write(new Date().getFullYear());
                   </script>
                   All rights reserved |
-                  <a href="Index.html" target="_blank" style="cursor: pointer"
+                  <a href="index.html" target="_blank" style="cursor: pointer"
                     ><b>SiDRAFORCE</b></a
                   >
                 </div>
@@ -727,7 +689,7 @@
           </div>
         </div>
       </footer>
-    </div>
+  </div>
     <div class="scroll-top">
       <a class="smoothscroll" href="#top" style="border-radius: 100px"
         ><i class="flaticon-up-arrow"></i
